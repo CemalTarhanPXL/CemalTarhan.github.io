@@ -18,5 +18,12 @@
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19"
+  },
+  "homepage": "https://cemaltarhanpxl.github.io/",
+  "scripts": {
+    "build": "next build",
+    "export": "next export",
+    "predeploy": "npm run build && npm run export",
+    "deploy": "gh-pages -d out"
   }
 }
