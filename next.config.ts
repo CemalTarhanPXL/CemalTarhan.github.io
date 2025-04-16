@@ -1,13 +1,8 @@
-/** @type {import('next').NextConfig} */
-const isProd = process.env.NODE_ENV === 'production';
+import type { NextConfig } from 'next';
 
-const nextConfig = {
-  output: 'export', // Schakelt statische export in
-  basePath: isProd ? '/CemalTarhanPXL.github.io' : '', // Geef de repository-naam op voor GitHub Pages
-  assetPrefix: isProd ? '/CemalTarhanPXL.github.io' : '', // Voor statische assets
-  images: {
-    unoptimized: true, // Schakelt standaard afbeeldingsoptimalisatie uit
-  },
+const nextConfig: NextConfig = {
+  output: 'export',
+  basePath: process.env.PAGES_BASE_PATH,
 };
 
 export default nextConfig;
