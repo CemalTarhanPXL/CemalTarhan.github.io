@@ -1,7 +1,10 @@
+
+import Navbar from "../components/navbar";
 export default function Home() {
   return (
-    <main>
+    <>
+      <Navbar />
       <div>Next.js on GitHub Pages</div>
-    </main>
+    </>
   );
 }
