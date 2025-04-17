@@ -17,8 +17,11 @@ export default function Home() {
           Hi, Welkom op mijn website!
         </Typography>
         <Typography variant="body1" sx={{ marginBottom: '24px' }}>
-          Ik ben Cemal Tarhan, geboren in Lommel (België), gehuwd met Derya Gultepe en vader van een zoon Mikail. 
-          Mijn interesses liggen voornamelijk in sportieve activiteiten. Sinds enkele jaren ben ik bezig met calisthenics, ik speel ook wekelijks zaalvoetbal. Daarnaast gaan we af en toe zwemmen met mijn zoon in mijn vrije tijd.
+          Even een korte voorstelling. <br />
+          Ik ben Cemal Tarhan, geboren in Lommel (België), gehuwd met Derya Gultepe en vader van een zoon Mikail. <br />
+          Mijn interesses liggen voornamelijk in sportieve activiteiten. Sinds enkele jaren ben ik bezig met calisthenics, ik speel ook wekelijks zaalvoetbal. <br />
+          Daarnaast gaan we af en toe zwemmen met mijn zoon in mijn vrije tijd. <br />
+          Ik ben natuurlijk ook geïnteresseerd in technologie en softwareontwikkeling.
         </Typography>
         <Box
           sx={{
