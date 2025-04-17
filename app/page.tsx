@@ -1,74 +1,132 @@
+"use client";
+
 import Navbar from '../components/navbar';
-import { Box, Typography } from '@mui/material';
+import { Box, Typography, Button } from '@mui/material';
 import Image from 'next/image';
 
 export default function Home() {
+  const textLines = [
+    "Gepassioneerde in het full stack ontwikkelen van webapplicaties.",
+  ];
+
   return (
     <>
       <Navbar />
       <Box
         sx={{
-          marginX: { xs: '50px', md: '400px' }, // 100px marge op desktop, 20px op mobiel
-          marginTop: '20px', // Afstand van Navbar
+          marginTop: '40px',
           textAlign: 'left',
+          backgroundColor: 'rgba(70, 158, 165, 0.15)',
+          minHeight: '10vh',
+          padding: '40px',
+          width: '100%',
+          color: '#FFFFFF',
         }}
       >
-        <Typography variant="h4" component="div" sx={{ marginBottom: '16px' }}>
-          Hi, Welkom op mijn website!
-        </Typography>
-        <Typography variant="body1" sx={{ marginBottom: '24px' }}>
-          Even een korte voorstelling. <br />
-          Ik ben Cemal Tarhan, geboren in Lommel (België), gehuwd met Derya Gultepe en vader van een zoon Mikail. <br />
-          Mijn interesses liggen voornamelijk in sportieve activiteiten. Sinds enkele jaren ben ik bezig met calisthenics, ik speel ook wekelijks zaalvoetbal. <br />
-          Daarnaast gaan we af en toe zwemmen met mijn zoon in mijn vrije tijd. <br />
-          Ik ben natuurlijk ook geïnteresseerd in technologie en softwareontwikkeling.
-        </Typography>
+        {/* Tekstgedeelte */}
+        <Box sx={{ maxWidth: '800px', margin: '0 auto' }}>
+          <Typography
+            variant="h4"
+            component="div"
+            sx={{
+              color: 'rgba(30, 51, 71, 0.83)',
+              fontWeight: 'bold',
+              marginBottom: '16px',
+            }}
+          >
+            Hi, ik ben Cemal!
+          </Typography>
+          {textLines.map((line, index) => (
+            <Typography
+              key={index}
+              variant="h5"
+              sx={{
+                color: 'rgba(30, 51, 71, 0.99)',
+                marginBottom: '8px',
+                lineHeight: 1.6,
+                animation: `newTypewriter 5s steps(70, end) ${index * 2}s forwards, newBlinkCaret 3s step-end infinite`,
+                overflow: 'hidden',
+                borderRight: '2px solid #B0B0B0',
+                whiteSpace: 'nowrap',
+                width: '0',
+              }}
+            >
+              {line}
+            </Typography>
+          ))}
+        </Box>
+
+        {/* Afbeelding, gecentreerd */}
         <Box
           sx={{
             display: 'flex',
-            flexDirection: { xs: 'column', sm: 'row' }, // Gestapeld op mobiel, naast elkaar op desktop
-            gap: '20px', // Afstand tussen afbeeldingen
-            justifyContent: 'center',
+            justifyContent: 'center', // Centreer de afbeelding horizontaal
             marginTop: '40px',
-            marginBottom: '40px', // Extra ruimte onderaan
+            marginBottom: '40px',
           }}
         >
           <Box
             sx={{
               width: { xs: '100%', sm: '300px' }, // Volle breedte op mobiel, vaste breedte op desktop
-              height: '200px',
+              maxWidth: '300px',
+              height: '300px',
               borderRadius: '8px',
               overflow: 'hidden',
-              boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)', // Subtiele schaduw
+              boxShadow: '0 4px 8px rgba(0, 0, 0, 0.3)',
             }}
           >
             <Image
-              src="/images/trouw.jpeg" // Zorg dat dit pad correct is
-              alt="Tijdens trouw broertje"
+              src="/images/ik.png" // Zorg dat dit pad correct is
+              alt="Foto van Cemal"
               width={300}
-              height={200}
-              style={{ objectFit: 'cover' }} // Verwijder width/height uit style
-            />
-          </Box>
-          <Box
-            sx={{
-              width: { xs: '100%', sm: '300px' },
-              height: '200px',
-              borderRadius: '8px',
-              overflow: 'hidden',
-              boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
-            }}
-          >
-            <Image
-              src="/images/zwembad.png" // Zorg dat dit pad correct is
-              alt="Zwemmen met Mikail"
-              width={300}
-              height={200}
+              height={300}
               style={{ objectFit: 'cover' }} // Verwijder width/height uit style
             />
           </Box>
         </Box>
+
+        <Box
+          sx={{
+            display: 'flex',
+            flexDirection: { xs: 'column', sm: 'row' },
+            gap: '20px',
+            justifyContent: 'center',
+            marginTop: '40px',
+            marginBottom: '40px',
+          }}
+        />
       </Box>
+      {/* CSS voor animaties */}
+      <style jsx global>{`
+        @keyframes fadeIn {
+          0% {
+            opacity: 0;
+            transform: translateY(20px);
+          }
+          100% {
+            opacity: 1;
+            transform: translateY(0);
+          }
+        }
+
+        @keyframes newTypewriter {
+          from {
+            width: 0;
+          }
+          to {
+            width: 100%;
+          }
+        }
+
+        @keyframes newBlinkCaret {
+          from, to {
+            border-color: transparent;
+          }
+          50% {
+            border-color: #B0B0B0;
+          }
+        }
+      `}</style>
     </>
   );
 }

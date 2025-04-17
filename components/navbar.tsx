@@ -16,7 +16,8 @@ import MenuItem from "@mui/material/MenuItem";
 const pages = [
   { name: "Home", path: "/" },
   { name: "Portfolio", path: "/portfolio" },
-  { name: "Curriculum vitae", path: "/cv" },
+  { name: "Tijdslijn", path: "/cv" },
+  { name: "Over mij", path: "/about" },
 ];
 
 function Navbar() {
