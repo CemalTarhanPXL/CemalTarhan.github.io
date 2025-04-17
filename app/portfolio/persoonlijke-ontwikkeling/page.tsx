@@ -151,14 +151,14 @@ export default function PersoonlijkeOntwikkeling() {
         >
           <Button
             variant="contained"
-            href="/portfolio/innovatie/"
+            href="/portfolio/innovatie"
             sx={{ backgroundColor: '#1976d2', color: '#fff' }}
           >
             Innovatie
           </Button>
           <Button
             variant="contained"
-            href="/portfolio/seminaries/"
+            href="/portfolio/seminaries"
             sx={{ backgroundColor: '#1976d2', color: '#fff' }}
           >
             Seminaries

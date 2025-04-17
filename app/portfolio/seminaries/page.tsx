@@ -166,14 +166,14 @@ export default function Seminarie() {
         >
           <Button
             variant="contained"
-            href="/portfolio/persoonlijke-ontwikkeling/"
+            href="/portfolio/persoonlijke-ontwikkeling"
             sx={{ backgroundColor: '#1976d2', color: '#fff' }}
           >
             Persoonlijke Ontwikkeling
           </Button>
           <Button
             variant="contained"
-            href="/portfolio/innovatie/"
+            href="/portfolio/innovatie"
             sx={{ backgroundColor: '#1976d2', color: '#fff' }}
           >
             Innovatie

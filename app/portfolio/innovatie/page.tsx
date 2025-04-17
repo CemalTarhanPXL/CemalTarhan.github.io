@@ -109,14 +109,14 @@ export default function Innovatie() {
         >
           <Button
             variant="contained"
-            href="/portfolio/persoonlijke-ontwikkeling/"
+            href="/portfolio/persoonlijke-ontwikkeling"
             sx={{ backgroundColor: '#1976d2', color: '#fff' }}
           >
             Persoonlijke Ontwikkeling
           </Button>
           <Button
             variant="contained"
-            href="/portfolio/seminaries/"
+            href="/portfolio/seminaries"
             sx={{ backgroundColor: '#1976d2', color: '#fff' }}
           >
             Seminaries
