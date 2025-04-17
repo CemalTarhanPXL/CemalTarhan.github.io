@@ -93,6 +93,69 @@ export default function Seminarie() {
 
          </AccordionDetails>
         </Accordion>
+        <Accordion
+          sx={{
+            maxWidth: { xs: '100%', sm: 1000 },
+            width: '100%',
+            marginBottom: '16px',
+            backgroundColor: 'rgba(17, 117, 247, 0.1)'
+          }}
+        >
+          <AccordionSummary
+            expandIcon={<ExpandMoreIcon />}
+            aria-controls="panel2-content"
+            id="panel2-header"
+          >
+            <Typography component="span">Outsystems met nadruk op genAI </Typography>
+          </AccordionSummary>
+          <AccordionDetails sx={{ backgroundColor: 'rgba(0, 0, 0, 0)' }}>
+            Een seminarie georganiseerd door het Harmony groep.
+            Eerst hebben we een intro ontvangen over Harmony groep.
+            Vervolgens hebben we gewerkt met de Outsystems software, een low code software. Het was mogelijk om binnen de 5 min een project gedeployed te krijgen.
+
+         </AccordionDetails>
+        </Accordion>
+        <Accordion
+          sx={{
+            maxWidth: { xs: '100%', sm: 1000 },
+            width: '100%',
+            marginBottom: '16px',
+            backgroundColor: 'rgba(17, 117, 247, 0.1)'
+          }}
+        >
+          <AccordionSummary
+            expandIcon={<ExpandMoreIcon />}
+            aria-controls="panel2-content"
+            id="panel2-header"
+          >
+            <Typography component="span">Discover the meeting point of GenAI, Prompt Engineering and Quantum Computing </Typography>
+          </AccordionSummary>
+          <AccordionDetails sx={{ backgroundColor: 'rgba(0, 0, 0, 0)' }}>
+            Een seminarie georganiseerd door het bedrijf IBM.
+            Informatie gekregen over IBM. Vervolgens hebben we een zeer boeiende uitleg gekregen over Quantum computing.
+         </AccordionDetails>
+        </Accordion>
+        <Accordion
+          sx={{
+            maxWidth: { xs: '100%', sm: 1000 },
+            width: '100%',
+            marginBottom: '16px',
+            backgroundColor: 'rgba(17, 117, 247, 0.1)'
+          }}
+        >
+          <AccordionSummary
+            expandIcon={<ExpandMoreIcon />}
+            aria-controls="panel2-content"
+            id="panel2-header"
+          >
+            <Typography component="span">CoPilot Studio: Build intelligent connected chatbots leveraging the power of genAI </Typography>
+          </AccordionSummary>
+          <AccordionDetails sx={{ backgroundColor: 'rgba(0, 0, 0, 0)' }}>
+            We hebben een zeer boeien presentatie gevolgd over Copilot studio.
+            Dit is een tool die je kan helpen om chatbots te bouwen met behulp van genAI.
+            We hebben ook een demo gekregen van de tool.
+         </AccordionDetails>
+        </Accordion>
         <div
           style={{
             display: 'flex',
