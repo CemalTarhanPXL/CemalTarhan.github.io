@@ -16,7 +16,6 @@ import MenuItem from "@mui/material/MenuItem";
 const pages = [
   { name: "Home", path: "/" },
   { name: "Portfolio", path: "/portfolio" },
-  { name: "Projects", path: "/projects" },
   { name: "Curriculum vitae", path: "/cv" },
 ];
 
