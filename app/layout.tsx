@@ -79,7 +79,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 <div key={i} className="star" />
               ))}
             </div>
-            <ClientWrapper>{children}</ClientWrapper>
+            {children}
 
 
         </AppRouterCacheProvider>
