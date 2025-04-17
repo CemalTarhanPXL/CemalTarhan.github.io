@@ -76,7 +76,7 @@ export default function Home() {
             }}
           >
             <Image
-              src="/images/ik.png" // Zorg dat dit pad correct is
+              src="/images/Ik.png" // Zorg dat dit pad correct is
               alt="Foto van Cemal"
               width={300}
               height={300}
