@@ -7,6 +7,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="nl">
       <head>
+      <link
+          href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap"
+          rel="stylesheet"
+        />
         <style>{`
           body {
             margin: 0;

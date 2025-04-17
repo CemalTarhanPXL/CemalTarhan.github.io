@@ -32,7 +32,14 @@ function Navbar() {
   };
 
   return (
-    <AppBar position="static" sx={{ backgroundColor: "transparent", boxShadow: "none" }}>
+    <AppBar
+      position="static"
+      sx={{
+        backgroundColor: "transparent",
+        boxShadow: "none",
+        color: "#000000",
+      }}
+    >
       <Container maxWidth="xl">
         <Toolbar disableGutters>
 
@@ -63,9 +70,19 @@ function Navbar() {
                   onClick={handleCloseNavMenu}
                   component={Link}
                   href={page.path}
-                  sx={{ justifyContent: "center" }} // Centreert het MenuItem
+                  sx={{ justifyContent: "center" }}
                 >
-                  <Typography sx={{ textAlign: "center", color: "#000000" }}>
+                  <Typography
+                    sx={{
+                      textAlign: "center",
+                      color: "#000000",
+                      fontFamily: "'Poppins', sans-serif",
+                      fontWeight: 500,
+                      fontSize: "1rem",
+                      textTransform: "capitalize",
+                      letterSpacing: "0.05rem",
+                    }}
+                  >
                     {page.name}
                   </Typography>
                 </MenuItem>
@@ -94,7 +111,7 @@ function Navbar() {
             sx={{
               flexGrow: 1,
               display: { xs: "none", md: "flex" },
-              justifyContent: "center", // Centreert de navigatie-items
+              justifyContent: "center",
             }}
           >
             {pages.map((page) => (
@@ -103,7 +120,16 @@ function Navbar() {
                 component={Link}
                 href={page.path}
                 onClick={handleCloseNavMenu}
-                sx={{ my: 2, color: "#000000", display: "block" }}
+                sx={{
+                  my: 2,
+                  color: "#000000",
+                  display: "block",
+                  fontFamily: "'Poppins', sans-serif",
+                  fontWeight: 500,
+                  fontSize: "1.1rem",
+                  textTransform: "capitalize",
+                  letterSpacing: "0.05rem",
+                }}
               >
                 {page.name}
               </Button>

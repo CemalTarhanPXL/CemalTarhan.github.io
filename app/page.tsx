@@ -4,7 +4,7 @@ export default function Home() {
   return (
     <>
       <Navbar />
-      <div>Next.js on GitHub Pages</div>
+      <div>Hi, Welkom op mijn website!</div>
     </>
   );
 }

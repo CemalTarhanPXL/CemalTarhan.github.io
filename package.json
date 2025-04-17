@@ -15,8 +15,7 @@
 		"@mui/material-nextjs": "^7.0.2",
 		"next": "^15.1.7",
 		"react": "^19.0.0",
-		"react-dom": "^19.0.0",
-		"react-router-dom": "^7.5.0"
+		"react-dom": "^19.0.0"
 	},
 	"devDependencies": {
 		"@types/node": "^22.13.4",
