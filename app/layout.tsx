@@ -2,6 +2,8 @@ import * as React from 'react';
 import { AppRouterCacheProvider } from '@mui/material-nextjs/v15-appRouter';
 import { ThemeProvider } from '@mui/material/styles';
 import CssBaseline from '@mui/material/CssBaseline';
+import { useRedirectIfNotAllowed } from '../lib/useRedirectIfNotAllowed';
+import ClientWrapper from '../ClientWrapper';
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
@@ -77,7 +79,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 <div key={i} className="star" />
               ))}
             </div>
-            {children}
+            <ClientWrapper>{children}</ClientWrapper>
+
 
         </AppRouterCacheProvider>
       </body>

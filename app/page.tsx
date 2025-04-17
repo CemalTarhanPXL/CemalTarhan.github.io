@@ -43,11 +43,11 @@ export default function Home() {
             }}
           >
             <Image
-              src="/images/trouw.jpeg" // Vervang door je eigen afbeeldingspad
+              src="/images/trouw.jpeg" // Zorg dat dit pad correct is
               alt="Tijdens trouw broertje"
               width={300}
               height={200}
-              style={{ objectFit: 'cover', width: '100%', height: '100%' }}
+              style={{ objectFit: 'cover' }} // Verwijder width/height uit style
             />
           </Box>
           <Box
@@ -60,11 +60,11 @@ export default function Home() {
             }}
           >
             <Image
-              src="/images/zwembad.png" // Vervang door je eigen afbeeldingspad
+              src="/images/zwembad.png" // Zorg dat dit pad correct is
               alt="Zwemmen met Mikail"
               width={300}
               height={200}
-              style={{ objectFit: 'cover', width: '100%', height: '100%' }}
+              style={{ objectFit: 'cover' }} // Verwijder width/height uit style
             />
           </Box>
         </Box>
